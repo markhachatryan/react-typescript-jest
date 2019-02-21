@@ -5,12 +5,12 @@ import ApolloClient from "apollo-client";
 const cache = new InMemoryCache();
 console.log(process.env);
 const GITHUB_BASE_URL = 'https://api.github.com/graphql';
-const REACT_APP_GITHUB_PERSONAL_ACCESS_TOKEN = "cec81ac623c9525e0b943362d6b21642eda87842";
+const GITHUB_PERSONAL_ACCESS_TOKEN = "cef2ef2cf27c4f57ec51153dd374e0226fc9a822";
 
 const httpLink = new HttpLink({
   uri: GITHUB_BASE_URL,
   headers: {
-    authorization: `Bearer ${REACT_APP_GITHUB_PERSONAL_ACCESS_TOKEN}`,
+    authorization: `Bearer ${GITHUB_PERSONAL_ACCESS_TOKEN}`,
   },
 });
 
