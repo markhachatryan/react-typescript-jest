@@ -44,12 +44,15 @@ class Home extends React.Component <IProps, IState> {
           {({data, loading}) => {
             if (loading) return <div className="home-spinner"><Spinner/></div>;
             if (data) {
-
               if (data.search.edges.length > 1) {
                 return <ReposTable repos={data.search.edges}/>
               }
             }
-            return <div>YOU DO NOT SEARCH YET </div>
+            return (
+              <div className="alert alert-secondary" role="alert">
+                Search data is empty
+              </div>
+            )
           }}
         </Query>
       </div>

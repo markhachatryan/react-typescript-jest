@@ -11,13 +11,14 @@ const ReposTable = (props: any) => {
       <thead>
       <tr>
         <th scope="name">Name</th>
-        <th scope="owner">Link to Repository</th>
-        <th scope="col">Star</th>
+        <th scope="owner">Owner User Name</th>
+        <th scope="link">Link to Repository</th>
+        <th scope="star">Star</th>
       </tr>
       </thead>
       <tbody>
       {repos.map((item: any) => {
-        const {id, name, url, viewerHasStarred} = item.node;
+        const {id, name, url, viewerHasStarred, owner} = item.node;
         return (
           <Row
             key={id}
@@ -25,6 +26,7 @@ const ReposTable = (props: any) => {
             id={id}
             url={url}
             viewerHasStarred={viewerHasStarred}
+            owner={owner}
           />
         )
       })}

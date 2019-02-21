@@ -1,22 +1,20 @@
 import * as React from 'react';
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import {BrowserRouter as Router, Route, Switch, Link} from 'react-router-dom';
 import Home from './components/home/home';
+import Owner from './components/owner/owner';
 
-const Repo = () => <div>Repo</div>;
-
-class App extends React.Component <any> {
-  render() {
-    return (
-      <div>
-        <Router>
-          <Switch>
-            <Route exact phat="/" component={Home}/>
-            <Route phat="/repository/:id" component={Repo}/>
-          </Switch>
-        </Router>
-      </div>
-    )
-  }
-}
+const App = () => {
+  return (
+    <div className="container">
+      <Router>
+        <Switch>
+          <Route exact path="/" component={Home}/>
+          <Route path="/owner/:login" component={Owner}/>
+          <Route render={() => <div>OOPS ......</div>}/>
+        </Switch>
+      </Router>
+    </div>
+  )
+};
 
 export default App;

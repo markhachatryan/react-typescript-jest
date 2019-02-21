@@ -12,6 +12,7 @@ const SEARCH_QUERY= gql` query search ($Search: String! )
           viewerHasStarred
           owner {
             id
+            login
           }
         }
       }
