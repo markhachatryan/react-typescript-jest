@@ -1,0 +1,32 @@
+.header {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #272d31;
+}
+
+.header-search > input {
+    width: 300px;
+    height: 30px;
+    padding: 0 20px;
+    background-color: #42474b;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+}
+
+.header-search > input:focus {
+    background-color: #fff;
+}
+
+.header-search > button {
+    height: 30px;
+    margin-left: 15px;
+    padding: 0 15px;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    background-color: #00c35d;
+}
