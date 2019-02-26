@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test for react test 1`] = `
+<div
+  className="header"
+>
+  <form
+    className="header-search"
+    onSubmit={[Function]}
+  >
+    <input
+      onChange={[Function]}
+      type="search"
+      value=""
+    />
+    <button
+      type="submit"
+    >
+       Search 
+    </button>
+  </form>
+</div>
+`;

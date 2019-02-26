@@ -1,0 +1,90 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test for react test 1`] = `
+<div
+  className="lds-css ng-scope"
+>
+  <div
+    className="lds-blocks"
+    style={
+      Object {
+        "height": "100%",
+        "width": "100%",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "animationDelay": "0s",
+          "left": "38px",
+          "top": "38px",
+        }
+      }
+    />
+    <div
+      style={
+        Object {
+          "animationDelay": "0.125s",
+          "left": "80px",
+          "top": "38px",
+        }
+      }
+    />
+    <div
+      style={
+        Object {
+          "animationDelay": "0.25s",
+          "left": "122px",
+          "top": "38px",
+        }
+      }
+    />
+    <div
+      style={
+        Object {
+          "animationDelay": "0.875s",
+          "left": "38px",
+          "top": "80px",
+        }
+      }
+    />
+    <div
+      style={
+        Object {
+          "animationDelay": "0.375s",
+          "left": "122px",
+          "top": "80px",
+        }
+      }
+    />
+    <div
+      style={
+        Object {
+          "animationDelay": "0.75s",
+          "left": "38px",
+          "top": "122px",
+        }
+      }
+    />
+    <div
+      style={
+        Object {
+          "animationDelay": "0.625s",
+          "left": "80px",
+          "top": "122px",
+        }
+      }
+    />
+    <div
+      style={
+        Object {
+          "animationDelay": "0.5s",
+          "left": "122px",
+          "top": "122px",
+        }
+      }
+    />
+  </div>
+</div>
+`;

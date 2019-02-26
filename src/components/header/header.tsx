@@ -8,7 +8,7 @@ interface IHeaderState {
   searchInput: string;
 }
 
-class Header extends React.Component <IHeaderProps, IHeaderState> {
+class Header extends React.Component<IHeaderProps, IHeaderState> {
   state = {
     searchInput: ""
   };
@@ -25,7 +25,7 @@ class Header extends React.Component <IHeaderProps, IHeaderState> {
     const { handelSubmitSearch } = this.props;
     const { searchInput } = this.state;
     handelSubmitSearch(searchInput);
-    this.setState({ searchInput: '' })
+    this.setState({ searchInput: "" });
   };
 
   render() {

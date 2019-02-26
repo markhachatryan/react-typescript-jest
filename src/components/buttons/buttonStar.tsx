@@ -18,7 +18,6 @@ const ButtonStar = (props: IButtonStar  ) => {
               className="btn btn-primary"
               type="button"
               onClick={starRepository}
-              // disabled={viewerHasStarred}
             >
               {action}
             </button>
